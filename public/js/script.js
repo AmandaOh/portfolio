@@ -22,8 +22,31 @@ $(document).ready(function($){
     $('.number.three').addClass('make-visible')
   }, 3000)
 
-  $('.number.one').on('mouseover',function(){
+  $('.heading').on('mouseover',function(){
+    $('.inner.main').css('visibility','visible')
     $('.inner.one').css('visibility','hidden')
+    $('.inner.two').css('visibility','hidden')
+    $('.inner.three').css('visibility','hidden')
   })
 
+  $('.number.one').on('mouseover',function(){
+    $('.inner.one').css('visibility','visible')
+    $('.inner.main').css('visibility','hidden')
+    $('.inner.two').css('visibility','hidden')
+    $('.inner.three').css('visibility','hidden')
+  })
+
+  $('.number.two').on('mouseover',function(){
+    $('.inner.two').css('visibility','visible')
+    $('.inner.main').css('visibility','hidden')
+    $('.inner.one').css('visibility','hidden')
+    $('.inner.three').css('visibility','hidden')
+  })
+
+  $('.number.three').on('mouseover',function(){
+    $('.inner.three').css('visibility','visible')
+    $('.inner.main').css('visibility','hidden')
+    $('.inner.one').css('visibility','hidden')
+    $('.inner.two').css('visibility','hidden')
+  })
 })

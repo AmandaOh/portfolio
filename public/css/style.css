@@ -11,6 +11,11 @@ h1{
   text-align: right;
 }
 
+h2{
+  font-family: 'Josefin Slab', serif;
+  font-size: 2em;
+}
+
 .container{
   background-color: #FFF;
   position: relative;
@@ -28,12 +33,30 @@ h1{
   bottom: 20%;
   margin-top: 12%;
   margin-left: 10%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   /*visibility: hidden;*/
 }
 
 .inner{
-  position:absolute;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+}
+
+.inner.main{
+  visibility: visible;
+}
+
+.screenshots{
+  position: absolute;
+  display: inline-block;
+}
+
+.screenshot{
+  position: relative;
+  width: 40%;
+  margin-right: 5%;
+  display: inline-block;
 }
 
 p{
