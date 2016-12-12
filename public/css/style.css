@@ -1,0 +1,56 @@
+body{
+  background: url('../images/city-lights.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  text-align: right;
+}
+
+.container{
+  background-color: #FFF;
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 5% auto;
+  padding: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content{
+  position: relative;
+  width: 90%;
+  height: 85%;
+  bottom: 20%;
+  margin-top: 12%;
+  margin-left: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*visibility: hidden;*/
+}
+
+.inner{
+  position:absolute;
+}
+
+p{
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+}
+
+.number{
+  position: relative;
+  bottom: 73%;
+  width: 5%;
+  height: 15%;
+  visibility: hidden;
+  -webkit-transition: visibility 2s ease-in;
+}
+
+.number:hover {
+  background-color: rgba(65, 61, 61, 0.93);
+  color: #FFF;
+}
