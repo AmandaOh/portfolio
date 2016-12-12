@@ -22,6 +22,10 @@ $(document).ready(function($){
     $('.number.three').addClass('make-visible')
   }, 3000)
 
+  setTimeout(function(){
+    $('.inner.main').css('visibility', 'visible')
+  }, 3300)
+
   $('.heading').on('mouseover',function(){
     $('.inner.main').css('visibility','visible')
     $('.inner.one').css('visibility','hidden')
