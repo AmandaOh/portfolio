@@ -1,5 +1,4 @@
 var express = require('express')
-var path = require('path')
 var dotenv = require('dotenv')
 var app = express()
 
