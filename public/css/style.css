@@ -67,6 +67,7 @@ h3{
   /*visibility: hidden;*/
 }
 
+
 .inner{
   position: absolute;
   visibility: hidden;
@@ -136,4 +137,92 @@ p{
   background-color: rgba(65, 61, 61, 0.93);
   color: #FFF;
   cursor: pointer;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  html{
+    min-height: 100%;
+  }
+  .container{
+    margin-top: 15%;
+  }
+  .content{
+    bottom: 0;
+  }
+  .heading{
+    padding-top: 10%;
+  }
+  .heading-one, .heading-two{
+    font-size: 3em;
+  }
+  p {
+    font-size: 2em;
+    padding-right: 15%;
+  }
+  .logo-links {
+    width: 50px !important;
+    padding-right: 15%;
+  }
+  .other-links {
+    bottom: 15%;
+  }
+  .number{
+    font-size: 2em;
+    bottom: 50%;
+    height: 5%;
+    line-height: 200%;
+    padding-left: 2%;
+  }
+  .screenshots{
+    display: block;
+  }
+  .screenshot{
+    display: block;
+    padding-top: 5%;
+  }
+  .website-image{
+    padding-top: 5%;
+    min-width: 350px;
+  }
+  .inner {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .vertical {
+    margin-left: 10% !important;
+  }
+  @keyframes topToBottom {
+      0%   {
+        margin-top: 0;
+        height: 50%;
+      }
+      100% {
+        margin-top: 110%;
+        height: 7%;
+      }
+  }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+  p {
+    line-height: 120% !important;
+  }
+  @keyframes topToBottom {
+    0%   {
+      margin-top: 0;
+      height: 50%;
+    }
+    100% {
+      margin-top: 40%;
+      height: 12%;
+    }
+  }
 }
