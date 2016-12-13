@@ -12,23 +12,28 @@
     width:100%;
 }
 
-.heading{
-  font-family: 'Josefin Slab', serif;
-  font-size: 2em;
-  visibility: hidden;
-  color: #000;
-  /*transition: visibility 5s ease-in;*/
+.reduce-length{
+  width: 0%;
+}
 
+.appear-from-left{
+  visibility: visible;
+  -webkit-animation: leftThenRight 1s linear;
+}
+
+@-webkit-keyframes leftThenRight {
+  0%   {right: 30%;}
+  100% {right: 0;}
+}
+
+.appear-from-right{
+  visibility: visible;
+  -webkit-animation: rightThenLeft 1s linear;
 }
 
 @-webkit-keyframes rightThenLeft {
-    0%   {margin-right: -50%;}
-    100% {margin-right: 0;}
-}
-
-.appear{
-  visibility: visible;
-  -webkit-animation: rightThenLeft 1s linear;
+  0%   {left: 30%;}
+  100% {left: 0;}
 }
 
 .vertical{
@@ -64,12 +69,3 @@
 .make-visible{
   visibility: visible;
 }
-
-/*@-webkit-keyframes makeVisble {
-  0% {
-    visibility: hidden;
-  }
-  100%{
-    visibility: visible;
-  }
-}*/

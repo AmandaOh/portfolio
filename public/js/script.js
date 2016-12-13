@@ -1,9 +1,9 @@
 $(document).ready(function($){
-  console.log('dom ready!')
+  // console.log('dom ready!')
 
   setTimeout(function(){
     $('.trans-grow').addClass('grow-length');
-    $('.heading').addClass('appear');
+    $('.heading-one').addClass('appear-from-right');
   }, 275)
 
   setTimeout(function(){
@@ -35,6 +35,10 @@ $(document).ready(function($){
     $('.inner.one').css('visibility','hidden')
     $('.inner.two').css('visibility','hidden')
     $('.inner.three').css('visibility','hidden')
+    $('.trans-grow').addClass('grow-length')
+    $('.trans-grow').removeClass('reduce-length')
+    $('.heading-one').addClass('appear-from-right')
+    $('.heading-two').removeClass('appear-from-left')
   })
 
   $('.number.one').on('mouseover',function(){
@@ -42,6 +46,10 @@ $(document).ready(function($){
     $('.inner.main').css('visibility','hidden')
     $('.inner.two').css('visibility','hidden')
     $('.inner.three').css('visibility','hidden')
+    $('.trans-grow').addClass('reduce-length')
+    $('.trans-grow').removeClass('grow-length')
+    $('.heading-one').removeClass('appear-from-right')
+    $('.heading-two').addClass('appear-from-left')
   })
 
   $('.number.two').on('mouseover',function(){
@@ -49,6 +57,10 @@ $(document).ready(function($){
     $('.inner.main').css('visibility','hidden')
     $('.inner.one').css('visibility','hidden')
     $('.inner.three').css('visibility','hidden')
+    $('.trans-grow').addClass('reduce-length')
+    $('.trans-grow').removeClass('grow-length')
+    $('.heading-one').removeClass('appear-from-right')
+    $('.heading-two').addClass('appear-from-left')
   })
 
   $('.number.three').on('mouseover',function(){
@@ -56,5 +68,9 @@ $(document).ready(function($){
     $('.inner.main').css('visibility','hidden')
     $('.inner.one').css('visibility','hidden')
     $('.inner.two').css('visibility','hidden')
+    $('.trans-grow').addClass('reduce-length')
+    $('.trans-grow').removeClass('grow-length')
+    $('.heading-one').removeClass('appear-from-right')
+    $('.heading-two').addClass('appear-from-left')
   })
 })
