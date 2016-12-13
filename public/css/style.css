@@ -76,6 +76,22 @@ h3{
 .inner.main{
   visibility: hidden;
   text-align: right;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-content{
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
+
+.other-links{
+  position: relative;
+  height: 15%;
+  width: 100%;
+  word-spacing: 15px;
 }
 
 .contactlink{
