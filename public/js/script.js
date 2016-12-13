@@ -23,10 +23,14 @@ $(document).ready(function($){
   }, 3000)
 
   setTimeout(function(){
-    $('.inner.main').css('visibility', 'visible')
-  }, 3300)
+    $('.number.four').addClass('make-visible')
+  }, 3500)
 
-  $('.heading').on('mouseover',function(){
+  setTimeout(function(){
+    $('.inner.main').css('visibility','visible')
+  }, 3800)
+
+  $('.number.four').on('mouseover',function(){
     $('.inner.main').css('visibility','visible')
     $('.inner.one').css('visibility','hidden')
     $('.inner.two').css('visibility','hidden')
